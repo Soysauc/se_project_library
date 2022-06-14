@@ -1,5 +1,12 @@
 /* Add your class here */
-
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
 .header {
   height: 100vh;
   min-height: 720px;
@@ -13,15 +20,24 @@
 
 .nav {
   /* Add flex properties here */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .logo {
+  max-width: 196px;
+  max-height: 60px;
 }
 
 .nav__links {
+  display: flex;
+  align-items: center;
   list-style: none;
   padding-left: 0;
   margin-top: 8px;
+  margin: 0 auto;
+  column-gap: 20px;
 }
 
 .nav__link {
@@ -37,17 +53,23 @@
   line-height: 76px;
   font-weight: 500;
   margin: 150px 0 0;
+  max-width: 544px;
 }
 
 .header__description {
   font-size: 20px;
   line-height: 30px;
   margin: 32px 0 0;
+  max-width: 465px;
 }
 
 .header__image {
   /* Write styles here */
   z-index: 1;
+  max-width: 636px;
+  position: absolute;
+  top: 135px;
+  right: 20px;
 }
 
 .header__footer {
@@ -102,6 +124,8 @@
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
+  max-width: 360px;
+  height: 420px;
 }
 
 .card__content {
@@ -179,10 +203,14 @@
 
 .event-info__icon_type_calendar {
   background-image: url(../images/icon_calendar.svg);
+  max-width: 24px;
+  max-height: 24px;
 }
 
 .event-info__icon_type_pin {
   background-image: url(../images/icon_pin.svg);
+  max-width: 24px;
+  max-height: 24px;
 }
 
 .event-info__text {
@@ -205,65 +233,76 @@
 /* Add the hover state styles for .events__more here */
 
 .events__cover {
-  /* flex-grow: 1;
+  flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 780px;
   max-width: 780px;
-  position: relative; */
+  position: relative;
+  border: 1px solid red;
 }
 
 .events__image {
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 
 .person {
-  /* position: absolute;
+  position: absolute;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 10px; */
+  gap: 10px;
 }
 
 .person_name_feynman {
   /* Use correct values of top/right/bottom/left properties to position the element */
+  top: -30px;
+  left: 319px;
 }
 
 .person_name_burbidge {
   /* Use correct values of top/right/bottom/left properties to position the element */
+  top: 96px;
+  right: 125px;
 }
 
 .person_name_cannon {
   /* Use correct values of top/right/bottom/left properties to position the element */
+  bottom: 18px;
+  right: 216px;
 }
 
 .person_name_mitchell {
   /* Use correct values of top/right/bottom/left properties to position the element */
+  bottom: 82px;
+  left: 142px;
 }
 
 .person_name_tarter {
   /* Use correct values of top/right/bottom/left properties to position the element */
+  top: 79px;
+  left: 159px;
 }
 
 .person__image {
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 
 .person__image_size_l {
-  /* width: 140px; */
+  width: 140px;
 }
 
 .person__image_size_m {
-  /* width: 100px; */
+  width: 100px;
 }
 
 .person__image_size_s {
-  /* width: 80px; */
+  width: 80px;
 }
 
 .person__caption {
-  /* text-align: center;
+  text-align: center;
   font-size: 14px;
-  margin: 0; */
+  margin: 0;
 }
 
 .membership {
@@ -316,6 +355,7 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  /* z-index: ; */
 }
 
 .about__title {
@@ -323,7 +363,8 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  z-index: 1;
+  max-width: 154px;
+  /* z-index: -1; */
 }
 
 .about__content {
@@ -331,17 +372,24 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  
 }
 
 .about__paragraph {
-  margin: 0;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  margin: ; 
+  /* z-index: 1; */
 }
-
-.about__circle {
+/* .about__circle {
   background-color: #2f80ed;
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  left: -91px; 
+  top: -121px; */
+  /* z-index: 0; */
 }
 
 .footer {
