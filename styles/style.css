@@ -1,9 +1,8 @@
-/* Add your class here */
 .page {
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
-  font-family: Helvetica Neue, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -43,9 +42,9 @@
   text-decoration: none;
   font-weight: bold;
 }
-
-/* Add the hover state styles for .nav__link here */
-
+.nav__link:hover {
+  color: #1f69c9;
+}
 .header__title {
   font-size: 66px;
   line-height: 76px;
@@ -62,7 +61,6 @@
 }
 
 .header__image {
-  /* Write styles here */
   z-index: 1;
   max-width: 636px;
   position: absolute;
@@ -86,9 +84,9 @@
   color: #2f80ed;
   text-decoration: none;
 }
-
-/* Add the hover state styles for .header__link here */
-
+.header__link:hover {
+  color: #1f69c9;
+}
 .header__address {
   margin: 0;
   color: #838383;
@@ -115,7 +113,6 @@
   margin: 24px 0 68px 0;
 }
 
-/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 .staff__cards {
   list-style: none;
   display: flex;
@@ -123,6 +120,7 @@
   max-width: 760px;
   margin: 0 auto;
   gap: 40px;
+  padding: 0;
 }
 .card {
   background-color: #fff;
@@ -158,8 +156,6 @@
   font-size: 14px;
   line-height: 20px;
   color: #838383;
-  /* Auto margins applied on a flex item automatically extend specified margin to occupy the extra space in the flex container */
-  /* In our case, this pushes the element down to the bottom */
   margin-top: auto;
 }
 
@@ -204,18 +200,20 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 12px;
+  width: 24px;
+  height: 24px;
 }
 
 .event-info__icon_type_calendar {
   background-image: url(../images/icon_calendar.svg);
-  width: 24px;
-  height: 24px;
+  /* width: 24px;
+  height: 24px;  I kept these commented so that my code lines match up with the reviewer's*/
 }
 
 .event-info__icon_type_pin {
   background-image: url(../images/icon_pin.svg);
-  width: 24px;
-  height: 24px;
+  /* width: 24px;
+  height: 24px; */
 }
 
 .event-info__text {
@@ -234,16 +232,15 @@
   color: #2f80ed;
   text-decoration: none;
 }
-
-/* Add the hover state styles for .events__more here */
-
+.events__more:hover {
+  color: #1f69c9;
+}
 .events__cover {
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 780px;
   max-width: 780px;
   position: relative;
-  /* border: 1px solid red; */
 }
 
 .events__image {
@@ -327,16 +324,16 @@
 
 .membership__steps {
   list-style-type: none;
-  padding: 0 220px;
+  padding: 0;
   margin: 100px 0 0;
   display: flex;
-  justify-content: space-around;
-  flex-basis: 40px;
+  justify-content: center;
+  column-gap: 40px;
   /* Add styles */
 }
 
 .step {
-  max-width: 220px;
+  flex-basis: 220px;
 
   /* Add styles */
 }
@@ -375,7 +372,6 @@
   line-height: 30px;
   font-weight: 500;
   max-width: 154px;
-  position: relative;
   z-index: 1;
 }
 
@@ -384,14 +380,14 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  z-index: 1;
 }
 
 .about__paragraph {
   margin: 0 0 32px 0;
-  position: relative;
   z-index: 1;
 }
-.about__paragraph::last-child {
+.about__paragraph:last-child {
   margin: 0;
 }
 
@@ -420,7 +416,9 @@
 .footer__column_content_hours {
   margin-left: auto;
 }
-
+.footer__heading {
+  margin: 0 0 20px 0;
+}
 .footer__column_content_social {
   margin-left: 100px;
 }
@@ -455,7 +453,7 @@
   display: flex;
   align-items: center;
 }
-.footer__column-link :hover {
+.footer__column-link:hover {
   color: #c1c1c1;
 }
 
@@ -466,5 +464,5 @@
 }
 
 .footer__copyright {
-  margin-right: 108px;
+  margin: 108px 0 0 0;
 }
